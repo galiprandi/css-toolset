@@ -112,7 +112,7 @@ button {
   border: 1px solid;
   border-radius: var(--border-radius);
   background-color: var(--background-color);
-  line-height: 2em;
+  line-height: 2.5em;
   letter-spacing: 0.12em;
   transition-property: color, box-shadow, border;
   transition-duration: 0.2s;
@@ -223,6 +223,8 @@ input[type='submit'] {
   border-color: var(--danger-color);
   background-color: var(--danger-color);
   cursor: pointer;
+  transition-property: background-color, border-color, box-shadow;
+  transition-duration: 0.4s;
 }
 
 input[type='submit']:hover {
@@ -264,11 +266,13 @@ thead {
   border-color: var(--primary-color);
 }
 caption {
-  color: var(--primary-color);
   font-weight: normal;
 }
 tr:hover {
   color: var(--primary-color);
+  cursor: pointer;
+  outline: 1px solid;
+  font-weight: normal;
 }
 td:first-child {
   font-weight: normal;
