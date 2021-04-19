@@ -268,7 +268,7 @@ thead {
 caption {
   font-weight: normal;
 }
-tr:hover {
+tbody tr:hover {
   color: var(--primary-color);
   cursor: pointer;
   outline: 1px solid;
