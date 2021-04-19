@@ -1,0 +1,23 @@
+{
+  "name": "css-toolset",
+  "version": "2.0.0",
+  "description": "Elegant styles, without class names!",
+  "main": "index.html",
+  "author": "German Aliprandi",
+  "license": "MIT",
+  "scripts": {
+    "dev": "npx servor ./ --reload --browser",
+    "cleancss": "cleancss css-toolset.css -o css-toolset.min.css"
+  },
+  "keywords": [
+    "css-toolset",
+    "css",
+    "library",
+    "toolset",
+    "styles",
+    "elegant"
+  ],
+  "devDependencies": {
+    "clean-css-cli": "^5.2.2"
+  }
+}

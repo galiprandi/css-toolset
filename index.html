@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags Generador / https://galiprandi.github.io/meta-tag-generator/ -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>css-toolset</title>
+    <meta name="description" content="Elegant styles, without class names" />
+    <meta name="author" content="Germán Aliprandi" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="css-toolset" />
+    <meta property="og:description" content="Elegant styles, without class names" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="image/ipad_screen.png" />
+    <meta property="og:image:alt" content="css-toolset" />
+
+    <!-- Open Graph / Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="css-toolset" />
+    <meta name="twitter:description" content="Elegant styles, without class names" />
+    <meta name="twitter:image" content="image/ipad_screen.png" />
+    <!-- Meta Tags Generador / https://galiprandi.github.io/meta-tag-generator/ -->
+
+    <link rel="stylesheet" href="css-toolset.css" />
+  </head>
+  <body>
+    <section>
+      <h1 class="title">css-toolset</h1>
+      <q>Elegant styles, without class names</q>
+      <p>
+        css-toolset is small css library that apply elegant styles to your documents, without you need to add any class.
+      </p>
+      <p>
+        It ideal for css rookies, people with null graphics design skill, or for create MVP (minimal viable products)
+        with elegant styles and on the fly.
+      </p>
+      <cite>There will always be time later to hire a good graphic designer.</cite>
+    </section>
+    <br />
+    <section>
+      <h3>How to use:</h3>
+      <p>
+        Simply link <a href="./css-toolset.css" target="_blank" rel="noopener noreferrer">css-toolset stylesheet</a> to
+        your documents and you are ready to code.
+      </p>
+    </section>
+    <br />
+    <section>
+      <h3>How to personalize:</h3>
+      <p>After link css-toolset stylesheet, you can insert <b>style block</b> and overwrite this values.</p>
+      <pre>
+:root {
+  --text-color: #222;
+  --background-color: #fff;
+  --primary-color: #0081a7;
+  --danger-color: #e63946;
+
+  --body-max-width: 1024px;
+  --font-family: system-ui, sans-serif;
+  --line-height: 1.5;
+  --border-radius: 3px;
+  --shadow: 0 0 4px -1px var(--primary-color);
+}
+        </pre
+      >
+    </section>
+    <br />
+    <section>
+      <h3>Examples of principal elements:</h3>
+      <button>Buttons</button>
+      <button class="solid">Button.solid</button>
+      <button class="danger">Button.danger</button>
+      <button class="flat">Button.flat</button>
+      <button class="big">Button.big</button>
+    </section>
+    <br />
+    <section>
+      <h4 class="title">This is a h4 with class .title</h4>
+      <h1>Heading h1</h1>
+      <h2>Heading h2</h2>
+      <h3>Heading h3</h3>
+      <h4>Heading h4</h4>
+      <h5>Heading h5</h5>
+      <h6>Heading h6</h6>
+    </section>
+    <br />
+    <section>
+      <h4 class="title">OL and UL elements</h4>
+      <p>Order lists</p>
+      <ol>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+      </ol>
+      <p>Un order lists</p>
+      <ul>
+        <li>List item A</li>
+        <li>List item B</li>
+        <li>List item C</li>
+      </ul>
+    </section>
+    <br />
+    <section>
+      <h4 class="title">Blockquote and cite elements.</h4>
+      <q>This is a blockquote and q element. </q>
+      <br />
+      <cite>And this a cite element.</cite>
+    </section>
+    <br />
+    <section>
+      <h4 class="title">Froms elements</h4>
+      <form onsubmit="javascript:return false">
+        <fieldset>
+          <legend>This is the from style</legend>
+          <label for="name">Your Name:</label>
+          <input type="text" name="name" id="name" placeholder="Your Name" />
+          <label for="email">Your email</label>
+          <input type="email" name="email" id="email" placeholder="Your email" required />
+          <label for="age-range">Age Range:</label>
+          <select name="age-range" id="age-range">
+            <option value="1-10">1-10</option>
+            <option value="11-20">11-20</option>
+            <option value="21-45">21-45</option>
+            <option value="45+">45+</option>
+          </select>
+
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="male" />
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="female" checked />
+
+          <label for="newsletter">Suscribe to newsletter?</label>
+          <input type="checkbox" name="newsletter" id="newsletter" checked />
+
+          <label for="comments">Comments:</label>
+          <textarea name="comments" id="comments"></textarea>
+          <p>* The submit button will be visible when all required values has been completed</p>
+          <input type="submit" value="Send" />
+        </fieldset>
+      </form>
+    </section>
+    <br />
+    <section>
+      <h4 class="title">Tables</h4>
+      <table>
+        <caption>
+          List of user
+        </caption>
+        <thead>
+          <tr>
+            <td>Name</td>
+            <td>Age Range</td>
+            <td>Comments</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John Doe</td>
+            <td>21-45</td>
+            <td>I want to get new computer for work on web developer. Please,call my to...</td>
+          </tr>
+          <tr>
+            <td>Sara Connor</td>
+            <td>21-45</td>
+            <td>I kill all machines with my hands.</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Name</td>
+            <td>Age Range</td>
+            <td>Comments</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+  </body>
+</html>

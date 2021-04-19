@@ -1,0 +1,369 @@
+/**
+ * *************************************************************** CSS-TOOLSET
+ * Elegant styles, without class names!
+ * 
+ * Licence: MIT Author: German Aliprandi
+ * 
+ * Find the perfect palette by mixing search terms. visit:
+ * https://coolors.co/palettes/trending
+ * 
+ * ***************************************************************
+ */
+
+/**
+ * *************************************************************** Custom
+ * variables ***************************************************************
+ */
+
+:root {
+  --text-color       : #222;
+  --background-color : #fff;
+  --primary-color    : #0081a7;
+  --danger-color     : #e63946;
+  --body-max-width   : 1024px;
+  --font-family      : system-ui, sans-serif;
+  --line-height      : 1.5;
+  --border-radius    : 3px;
+  --shadow           : 0 0 4px -1px var(--primary-color);
+}
+
+/**
+ * *************************************************************** General
+ * Styles ***************************************************************
+ */
+
+*,
+*::after,
+*::before {
+  box-sizing : border-box;
+}
+
+/* Margin for elements that is not first child */
+
+* + * {
+  margin-bottom : 1em;
+}
+
+body,
+html {
+  min-height       : 100vh;
+  color            : var(--text-color);
+  background-color : var(--background-color);
+  font-family      : var(--font-family);
+  font-weight      : 300;
+  line-height      : var(--line-height);
+}
+
+html {
+  padding : 0 1.3em;
+}
+
+body {
+  max-width : var(--body-max-width);
+  margin    : 0 auto;
+}
+
+/**
+ * *************************************************************** Utilities
+ * ***************************************************************
+ */
+
+.flat {
+  border-radius : 0;
+}
+
+.title {
+  color       : var(--primary-color);
+  text-align  : center;
+  font-weight : normal;
+}
+
+.danger {
+  color : var(--danger-color);
+}
+
+button.danger,
+button.danger:hover:not(:disabled) {
+  color            : var(--background-color);
+  border-color     : var(--danger-color);
+  background-color : var(--danger-color);
+}
+
+/**
+ * *************************************************************** Anchor
+ * elements ***************************************************************
+ */
+
+a,
+a:link,
+a:visited {
+  color               : initial;
+  border-bottom       : 1px dotted;
+  text-decoration     : none;
+  font-weight         : normal;
+  transition-property : color,
+                        border;
+  transition-duration : 0.2s;
+}
+
+a:hover {
+  color         : var(--primary-color);
+  border-color  : var(--primary-color);
+  border-bottom : 1px solid;
+}
+
+/**
+ * *************************************************************** Button
+ * elements ***************************************************************
+ */
+
+button {
+  padding             : 0.3em 2em;
+  border              : 1px solid;
+  border-radius       : var(--border-radius);
+  background-color    : var(--background-color);
+  line-height         : 2em;
+  letter-spacing      : 0.12em;
+  transition-property : color,
+                        box-shadow,
+                        border;
+  transition-duration : 0.2s;
+  cursor              : pointer;
+}
+
+button:not(:nth-last-child(1)) {
+  margin-right : 1.5em;
+}
+
+button:hover {
+  border-color : var(--primary-color);
+  box-shadow   : var(--shadow);
+}
+
+button.solid {
+  color            : var(--background-color);
+  border-color     : var(--primary-color);
+  background-color : var(--primary-color);
+}
+
+button.solid:hover {
+  color : var(--background-color);
+}
+
+button.big {
+  display : block;
+  width   : 100%;
+}
+
+/**
+ * *************************************************************** Quotes and
+ * Cite elements ***************************************************************
+ */
+
+cite,
+q {
+  font-weight : normal;
+}
+
+/**
+ * *************************************************************** Heading
+ * elements ***************************************************************
+ */
+
+h4,
+h5,
+h6 {
+  font-weight : normal;
+}
+
+/**
+ * *************************************************************** List elements
+ * ***************************************************************
+ */
+
+ol,
+ul {
+  padding-left : 2em;
+}
+
+li {
+  margin-bottom : 0;
+}
+
+li:hover {
+  font-weight : normal;
+}
+
+ul li {
+  list-style-type : circle;
+}
+
+/**
+ * *************************************************************** Forms
+ * elements ***************************************************************
+ */
+
+legend {
+  padding : 0 1em;
+}
+
+fieldset {
+  padding       : 1em 2em;
+  border        : 1px solid;
+  border-radius : var(--border-radius);
+}
+
+label {
+  margin-left : 1em;
+}
+
+input,
+select,
+textarea {
+  display          : block;
+  width            : 100%;
+  height           : 3em;
+  padding          : 0 1em;
+  color            : var(--text-color);
+  border           : 1px solid;
+  border-radius    : var(--border-radius);
+  background-color : var(--background-color);
+}
+
+textarea {
+  padding : 1em;
+  outline : 0;
+}
+
+input:focus {
+  outline : 0;
+}
+
+select option {
+  font-size : 130%;
+}
+
+input[type='submit'] {
+  color            : var(--background-color);
+  border-color     : var(--danger-color);
+  background-color : var(--danger-color);
+  cursor           : pointer;
+}
+
+input[type='submit']:hover {
+  border-color     : var(--primary-color);
+  background-color : var(--primary-color);
+  box-shadow       : var(--shadow);
+}
+
+input:invalid {
+  border-color : var(--danger-color);
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  width       : 1.7em;
+  margin-left : 1em;
+}
+
+textarea {
+  min-height : 10em;
+}
+
+/* Hide submit button if form is invalid */
+
+form:invalid input[type='submit'] {
+  display : none;
+}
+
+/**
+ * *************************************************************** Table
+ * elements ***************************************************************
+ */
+
+table {
+  width          : 100%;
+  border-spacing : 1em 2em;
+  table-layout   : fixed;
+}
+
+tfoot,
+thead {
+  color        : var(--primary-color);
+  border-color : var(--primary-color);
+}
+
+caption {
+  color       : var(--primary-color);
+  font-weight : normal;
+}
+
+tr:hover {
+  color : var(--primary-color);
+}
+
+td:first-child {
+  font-weight : normal;
+}
+
+td {
+  overflow      : hidden;
+  text-overflow : ellipsis;
+  white-space   : nowrap;
+}
+
+td + td {
+  padding : 0 1em;
+}
+
+thead td {
+  color         : var(--foreground-color);
+  border-bottom : 1px dotted;
+}
+
+tfoot td {
+  color      : var(--foreground-color);
+  border-top : 1px dotted;
+}
+
+@media
+  screen
+  and (max-width : 600px) {
+  button {
+    display : block;
+    width   : 100%;
+  }
+  
+  fieldset {
+    padding : 1em;
+  }
+  
+  table {
+    border-bottom : 1px dotted var(--primary-color);
+  }
+  
+  caption,
+  table {
+    display  : block;
+    overflow : hidden;
+  }
+  
+  tbody,
+  thead {
+    display : block;
+  }
+  
+  tfoot {
+    display : none;
+  }
+  
+  tr {
+    display        : flex;
+    margin-bottom  : 1em;
+    flex-direction : column;
+  }
+  
+  td {
+    margin : 0;
+  }
+}
