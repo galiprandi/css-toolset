@@ -7,7 +7,7 @@ css-toolset is small css library that apply elegant styles to your documents, wi
 It ideal for css rookies, people with null graphics design skill, or for create MVP (minimal viable products) with elegant styles and on the fly.
 There will always be time later to hire a good graphic designer.
 
-[Live demo]()
+[Live demo](https://galiprandi.github.io/css-toolset/)
 
 <img src="images/ipad_screen.png" alt="css-toolset" title="css-toolset">
 
