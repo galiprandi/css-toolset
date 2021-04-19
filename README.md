@@ -9,7 +9,7 @@ There will always be time later to hire a good graphic designer.
 
 [Live demo]()
 
-<img scr="./images/ipad_screen.png" alt="css-toolset" title="css-toolset"/>
+<img src="images/ipad_screen.png" alt="css-toolset" title="css-toolset">
 
 ## How to use:
 
