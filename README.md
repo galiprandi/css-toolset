@@ -1,6 +1,6 @@
 # css-toolset
 
-> "Elegant styles, without classes"
+> "Elegant styles, without class names"
 
 css-toolset is small css library that apply elegant styles to your documents, without you need to add any class.
 
