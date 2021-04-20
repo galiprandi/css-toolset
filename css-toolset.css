@@ -238,7 +238,7 @@ textarea {
 
 /* Hide submit button if form is invalid */
 form:invalid input[type='submit'] {
-  /* display: none; */
+  display: none;
 }
 
 /***************************************************************** 
