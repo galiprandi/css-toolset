@@ -1,0 +1,37 @@
+.switch {
+  --color-on: #06d6a0;
+  --color-off: #22223b;
+  --color-sw: #fff;
+  --size: 20px;
+
+  position: fixed;
+  top: var(--size);
+  right: 0;
+  transform: rotate(-90deg);
+
+  display: inline-flex;
+  padding-right: var(--size);
+
+  border: 2px solid var(--color-sw);
+  border-radius: var(--size);
+  background-color: var(--color-off);
+  cursor: pointer;
+  box-shadow: 0 0 4px 0 grey;
+
+  transition-property: padding, background;
+  transition-duration: 0.3s;
+}
+.switch.active {
+  padding-right: 0;
+  padding-left: var(--size);
+  background-color: var(--color-on);
+}
+.switch .indicator {
+  display: inline-block;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+
+  margin: 3px;
+  background-color: var(--color-sw);
+}

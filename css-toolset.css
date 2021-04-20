@@ -246,46 +246,35 @@ form:invalid input[type='submit'] {
 *****************************************************************/
 table {
   width: 100%;
-  border-spacing: 1em 2em;
-  table-layout: fixed;
-}
-tfoot,
-thead {
-  color: var(--primary-color);
-  border-color: var(--primary-color);
+  border-spacing: 0.5em;
 }
 caption {
   font-weight: normal;
 }
+tfoot,
+thead {
+  color: var(--primary-color);
+}
+thead tr {
+  box-shadow: 0 1px 0 0;
+}
 tbody tr:hover {
   color: var(--primary-color);
-  cursor: pointer;
-  outline: 1px solid;
-  font-weight: normal;
+  box-shadow: 0 1px 0 0;
+  transition-property: color, box-shadow;
+  transition-duration: 0.2s;
+}
+td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 2;
 }
 td:first-child {
   font-weight: normal;
 }
 
-td {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  padding-left: 10px;
-}
-
-td + td {
-  padding: 0 1em;
-}
-
-thead td {
-  color: var(--foreground-color);
-  border-bottom: 1px dotted;
-}
-
-tfoot td {
-  color: var(--foreground-color);
-  border-top: 1px dotted;
+tfoot tr {
+  box-shadow: 0 -1px 0 0;
 }
 
 @media screen and (max-width: 600px) {
@@ -299,31 +288,27 @@ tfoot td {
   }
 
   table {
-    border-bottom: 1px dotted var(--primary-color);
+    box-shadow: 0 1px 0 0 var(--primary-color);
   }
-
   caption,
   table {
     display: block;
     overflow: hidden;
   }
-
   tbody,
   thead {
     display: block;
   }
-
   tfoot {
     display: none;
   }
-
   tr {
     display: flex;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
     flex-direction: column;
   }
-
   td {
     margin: 0;
+    line-height: 1.5;
   }
 }
