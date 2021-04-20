@@ -106,7 +106,7 @@ input[type='submit'] {
   border: 1px solid;
   border-radius: var(--border-radius);
   background-color: var(--background-color);
-  height: 3em;
+  height: 2.5em;
   letter-spacing: 0.12em;
   transition-property: color, box-shadow, border, background-color;
   transition-duration: 0.2s;
