@@ -31,15 +31,57 @@
     </style>
     <script>
       function styleToggle() {
+        document.querySelector('.switch').classList.toggle('active')
         const filename = 'css-toolset.css'
         const stylesheet = document.getElementById('stylesheet')
-
-        if (stylesheet.href.includes(filename)) stylesheet.href = ''
-        else stylesheet.href = filename
+        const href = stylesheet.href.includes(filename) ? '' : filename
+        stylesheet.href = href
       }
     </script>
+    <style>
+      .switch {
+        --color-on: #06d6a0;
+        --color-off: #22223b;
+        --color-sw: #fff;
+        --size: 20px;
+
+        position: fixed;
+        top: var(--size);
+        right: var(--size);
+        transform: rotate(-90deg);
+
+        display: inline-flex;
+        padding-right: var(--size);
+
+        border: 2px solid var(--color-sw);
+        border-radius: var(--size);
+        background-color: var(--color-off);
+        cursor: pointer;
+        box-shadow: 0 0 4px 0 grey;
+
+        transition-property: padding, background;
+        transition-duration: 0.3s;
+      }
+      .switch.active {
+        padding-right: 0;
+        padding-left: var(--size);
+        background-color: var(--color-on);
+      }
+      .switch .indicator {
+        display: inline-block;
+        width: var(--size);
+        height: var(--size);
+        border-radius: 50%;
+
+        margin: 3px;
+        background-color: var(--color-sw);
+      }
+    </style>
   </head>
   <body>
+    <div class="switch active" onclick="styleToggle()" title="Show css-toolset styles ON/OFF">
+      <span class="indicator"></span>
+    </div>
     <section>
       <h1 class="title">css-toolset</h1>
       <q>Elegant styles, without classes</q>
