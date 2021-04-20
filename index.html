@@ -23,12 +23,21 @@
     <meta name="twitter:image" content="image/ipad_screen.png" />
     <!-- Meta Tags Generador / https://galiprandi.github.io/meta-tag-generator/ -->
 
-    <link rel="stylesheet" href="css-toolset.css" />
+    <link rel="stylesheet" href="css-toolset.css" id="stylesheet" />
     <style>
       pre {
         font-size: 12px;
       }
     </style>
+    <script>
+      function styleToggle() {
+        const filename = 'css-toolset.css'
+        const stylesheet = document.getElementById('stylesheet')
+
+        if (stylesheet.href.includes(filename)) stylesheet.href = ''
+        else stylesheet.href = filename
+      }
+    </script>
   </head>
   <body>
     <section>
