@@ -16,7 +16,7 @@ There will always be time later to hire a good graphic designer.
 Simply link **css-toolset** stylesheet to your documents and you are ready to code.
 
 ```html
-<link rel="stylesheet" href="http://localhost:8080/css-toolset.min.css" />
+<link rel="stylesheet" href="https://galiprandi.github.io/css-toolset/css-toolset.min.css" />
 ```
 
 ## How to personalize:
